@@ -1,6 +1,7 @@
 import React from 'react';
+import { TransparentBorder } from './chapter-1';
 
 const App = (): JSX.Element => (
-  <div>Get started ~</div>
+  <TransparentBorder />
 );
 export default App;
