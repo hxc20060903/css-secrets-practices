@@ -4,9 +4,11 @@ import createStyledComponentsTransformer from 'typescript-plugin-styled-componen
 import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 module.exports = () => {
   const isProduction = process.env.NODE_ENV === 'production';
+  const OUTPUT_PATH = path.join(__dirname, 'dist');
   return {
     target: 'web',
     devtool: isProduction ? 'cheap-eval-source-map' : 'source-map',
@@ -18,7 +20,7 @@ module.exports = () => {
     output: {
       chunkFilename: '[name].js',
       filename: '[name].js',
-      path: path.join(__dirname, 'dist'),
+      path: OUTPUT_PATH,
       publicPath: '/',
     },
 
@@ -35,8 +37,11 @@ module.exports = () => {
         inject: true,
         hash: true,
         filename: 'index.html',
-        favicon: 'src/favicon.jpg',
+        favicon: 'assets/favicon.jpg',
       }),
+      new CopyWebpackPlugin([
+        { from: 'assets/', to: path.join(OUTPUT_PATH, 'assets') },
+      ]),
       !isProduction && new BundleAnalyzerPlugin(),
     ].filter(Boolean),
 
@@ -45,7 +50,6 @@ module.exports = () => {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         use: [
-          'cache-loader',
           'babel-loader',
           {
             loader: 'ts-loader',

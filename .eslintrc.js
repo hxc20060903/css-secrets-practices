@@ -33,5 +33,6 @@ module.exports = {
     "indent": "off",
     "@typescript-eslint/indent": ["error", 2],
     "react/jsx-filename-extension": [2, { "extensions": [".tsx"] }],
+    "import/prefer-default-export": "off",
   }
 }
