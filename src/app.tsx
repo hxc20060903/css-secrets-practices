@@ -2,10 +2,12 @@ import React, { useState, useCallback, ChangeEventHandler } from 'react';
 import styled from 'styled-components';
 import { TransparentBorder } from 'chapter-1';
 import { Borders } from 'chapter-2';
+import { FlexibleBackground } from 'chapter-3';
 
 const Demos = {
   1: TransparentBorder,
   2: Borders,
+  3: FlexibleBackground,
 };
 
 const Input = styled.input({
