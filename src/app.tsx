@@ -4,12 +4,14 @@ import { TransparentBorder } from 'chapter-1';
 import { Borders } from 'chapter-2';
 import { FlexibleBackground } from 'chapter-3';
 import { InnerRoundedBorder } from 'chapter-4';
+import { StripedBackground } from 'chapter-5';
 
 const Demos = {
   1: TransparentBorder,
   2: Borders,
   3: FlexibleBackground,
   4: InnerRoundedBorder,
+  5: StripedBackground,
 };
 const DEMO_COUNT = Object.keys(Demos).length;
 
