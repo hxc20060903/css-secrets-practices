@@ -40,5 +40,8 @@ module.exports = {
       "allowTypedFunctionExpressions": true,
       "allowHigherOrderFunctions": true
     }],
+    "@typescript-eslint/array-type": ["error", {
+      "default": "generic",
+    }],
   }
 }
