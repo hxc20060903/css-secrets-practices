@@ -7,6 +7,7 @@ import { InnerRoundedBorder } from 'chapter-4';
 import { StripedBackground } from 'chapter-5';
 import { ComplexBackground } from 'chapter-6';
 import { ContinuousImageBorder } from 'chapter-8';
+import { Shapes } from 'chapter-9';
 
 const Demos = {
   1: TransparentBorder,
@@ -17,6 +18,7 @@ const Demos = {
   6: ComplexBackground,
   7: ComplexBackground, //
   8: ContinuousImageBorder,
+  9: Shapes,
 };
 const DEMO_COUNT = Object.keys(Demos).length;
 
