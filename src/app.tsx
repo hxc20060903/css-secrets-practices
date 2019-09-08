@@ -13,6 +13,7 @@ import { DiamondImage } from 'chapter-11';
 import { CutoutCorners } from 'chapter-12';
 import { TrapezoidTabs } from 'chapter-13';
 import { PieChartExample } from 'chapter-14';
+import { BoxShadows } from 'chapter-15';
 
 const Demos = {
   1: TransparentBorder,
@@ -29,6 +30,7 @@ const Demos = {
   12: CutoutCorners,
   13: TrapezoidTabs,
   14: PieChartExample,
+  15: BoxShadows,
 };
 const DEMO_COUNT = Object.keys(Demos).length;
 
