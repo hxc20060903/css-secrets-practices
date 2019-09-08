@@ -7,11 +7,12 @@ import { InnerRoundedBorder } from 'chapter-4';
 import { StripedBackground } from 'chapter-5';
 import { ComplexBackground } from 'chapter-6';
 import { ContinuousImageBorder } from 'chapter-8';
-import { PieChartExample } from 'chapter-14';
 import { Shapes } from 'chapter-9';
 import { ParallelogramsExamples } from 'chapter-10';
 import { DiamondImage } from 'chapter-11';
 import { CutoutCorners } from 'chapter-12';
+import { TrapezoidTabs } from 'chapter-13';
+import { PieChartExample } from 'chapter-14';
 
 const Demos = {
   1: TransparentBorder,
@@ -26,6 +27,7 @@ const Demos = {
   10: ParallelogramsExamples,
   11: DiamondImage,
   12: CutoutCorners,
+  13: TrapezoidTabs,
   14: PieChartExample,
 };
 const DEMO_COUNT = Object.keys(Demos).length;
