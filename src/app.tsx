@@ -11,6 +11,7 @@ import { PieChartExample } from 'chapter-14';
 import { Shapes } from 'chapter-9';
 import { ParallelogramsExamples } from 'chapter-10';
 import { DiamondImage } from 'chapter-11';
+import { CutoutCorners } from 'chapter-12';
 
 const Demos = {
   1: TransparentBorder,
@@ -24,6 +25,7 @@ const Demos = {
   9: Shapes,
   10: ParallelogramsExamples,
   11: DiamondImage,
+  12: CutoutCorners,
   14: PieChartExample,
 };
 const DEMO_COUNT = Object.keys(Demos).length;
