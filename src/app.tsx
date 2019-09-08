@@ -9,6 +9,7 @@ import { ComplexBackground } from 'chapter-6';
 import { ContinuousImageBorder } from 'chapter-8';
 import { PieChartExample } from 'chapter-14';
 import { Shapes } from 'chapter-9';
+import { ParallelogramsExamples } from 'chapter-10';
 
 const Demos = {
   1: TransparentBorder,
@@ -20,6 +21,7 @@ const Demos = {
   7: ComplexBackground, //
   8: ContinuousImageBorder,
   9: Shapes,
+  10: ParallelogramsExamples,
   14: PieChartExample,
 };
 const DEMO_COUNT = Object.keys(Demos).length;
