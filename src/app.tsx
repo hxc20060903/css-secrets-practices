@@ -16,6 +16,10 @@ import { PieChartExample } from 'chapter-14';
 import { BoxShadows } from 'chapter-15';
 import { IrregularDropShadows } from 'chapter-16';
 import { FrostedGlass } from 'chapter-18';
+import { Hyphenation } from 'chapter-20';
+import { LineBreakInsertion } from 'chapter-21';
+import { ZebraStripedTextLines } from 'chapter-22';
+import { FluidBackgroundFixedContent } from 'chapter-39';
 
 const Demos = {
   1: TransparentBorder,
@@ -36,6 +40,10 @@ const Demos = {
   16: IrregularDropShadows,
   17: IrregularDropShadows, //
   18: FrostedGlass,
+  20: Hyphenation,
+  21: LineBreakInsertion,
+  22: ZebraStripedTextLines,
+  39: FluidBackgroundFixedContent,
 };
 const DEMO_COUNT = Object.keys(Demos).length;
 
